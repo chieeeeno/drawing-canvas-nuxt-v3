@@ -1,0 +1,21 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "nuxt": "3.0.0-rc.11",
+    "prettier": "^2.7.1",
+    "sass": "^1.55.0",
+    "sass-loader": "10"
+  },
+  "dependencies": {
+    "ant-design-vue": "^3.2.13",
+    "fabric": "^5.2.4",
+    "vue-color": "^2.8.1"
+  }
+}
