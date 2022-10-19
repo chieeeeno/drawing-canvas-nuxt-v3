@@ -100,6 +100,17 @@ const stampImage = ref('')
 
 const drawCanvas = ref(null)
 
+const TITLE = 'お絵かきアプリ'
+useHead({
+  title: TITLE,
+  meta: [
+    {
+      name: 'description',
+      content: 'お絵かきアプリのサンプル'
+    }
+  ]
+})
+
 watch(brushWidth, (width) => {
   setBrushWidth(width)
 })
