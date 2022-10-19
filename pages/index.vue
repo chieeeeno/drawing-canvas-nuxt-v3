@@ -5,31 +5,50 @@
       <div class="tool">
         <div class="buttonContainer">
           <div class="buttonInner">
-            <Button type="default" @click="undo">
-              <UndoOutlined />
-            </Button>
-            <Button type="default" @click="redo">
-              <RedoOutlined />
-            </Button>
-            <Button
-              :type="isDrawingMode ? 'primary' : 'default'"
-              @click="toggleDrawingMode"
-            >
-              <EditOutlined />
-            </Button>
-            <Button
-              :type="isStampMode ? 'primary' : 'default'"
-              @click="toggleStampMode"
-            >
-              <PictureOutlined />
-            </Button>
-            <Button type="primary" @click="saveImage"
-              >Download <DownloadOutlined
-            /></Button>
+            <Tooltip>
+              <template #title>戻る</template>
+              <Button type="default" @click="undo">
+                <UndoOutlined />
+              </Button>
+            </Tooltip>
+
+            <Tooltip>
+              <template #title>進む</template>
+              <Button type="default" @click="redo">
+                <RedoOutlined />
+              </Button>
+            </Tooltip>
+            <Tooltip>
+              <template #title>線を書く</template>
+              <Button
+                :type="isDrawingMode ? 'primary' : 'default'"
+                @click="toggleDrawingMode"
+              >
+                <EditOutlined />
+              </Button>
+            </Tooltip>
+            <Tooltip>
+              <template #title>スタンプ</template>
+              <Button
+                :type="isStampMode ? 'primary' : 'default'"
+                @click="toggleStampMode"
+              >
+                <PictureOutlined />
+              </Button>
+            </Tooltip>
+            <Tooltip>
+              <template #title>ダウンロードする</template>
+              <Button type="primary" @click="saveImage"
+                >Download <DownloadOutlined
+              /></Button>
+            </Tooltip>
           </div>
-          <Button type="danger" @click="deleteAll">
-            <DeleteOutlined />
-          </Button>
+          <Tooltip>
+            <template #title>リセットする</template>
+            <Button type="danger" @click="deleteAll">
+              <DeleteOutlined />
+            </Button>
+          </Tooltip>
         </div>
       </div>
 
@@ -67,7 +86,7 @@ import {
   DownloadOutlined,
   DeleteOutlined,
 } from '@ant-design/icons-vue'
-import { Button, Slider } from 'ant-design-vue'
+import { Button, Slider, Tooltip } from 'ant-design-vue'
 // import { Compact } from 'vue-color'
 import DrawCanvas from '~/components/DrawCanvas'
 import StampSelect from '~/components/StampSelect'
