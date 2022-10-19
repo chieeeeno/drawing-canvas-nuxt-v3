@@ -31,7 +31,7 @@ export default {
   },
   data() {
     return {
-      selectStampIndex: null
+      selectStampIndex: 0
     }
   },
   computed: {

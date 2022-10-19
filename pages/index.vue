@@ -74,7 +74,7 @@ import StampSelect from '~/components/StampSelect'
 import { ref } from '#imports'
 
 const brushWidth = ref(1)
-const isStampMode = ref(false)
+const isStampMode = ref(true)
 const isDrawingMode = ref(false)
 const strokeColor = ref('red')
 const stampImage = ref('')
