@@ -39,6 +39,9 @@ export default {
       return stampList
     }
   },
+  mounted() {
+    this.$emit('selectImage', this.stampList[0])
+  },
   methods: {
     selectStamp(index) {
       console.log('selectStamp', index)
