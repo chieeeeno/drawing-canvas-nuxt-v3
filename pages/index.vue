@@ -84,7 +84,7 @@ import {
   EditOutlined,
   PictureOutlined,
   DownloadOutlined,
-  DeleteOutlined,
+  DeleteOutlined
 } from '@ant-design/icons-vue'
 import { Button, Slider, Tooltip } from 'ant-design-vue'
 // import { Compact } from 'vue-color'
@@ -96,7 +96,6 @@ const brushWidth = ref(1)
 const isStampMode = ref(true)
 const isDrawingMode = ref(false)
 const strokeColor = ref('red')
-const stampImage = ref('')
 
 const drawCanvas = ref(null)
 
