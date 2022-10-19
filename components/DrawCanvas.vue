@@ -13,12 +13,12 @@ export default defineComponent({
     id: String,
     width: {
       type: Number,
-      default: 600,
+      default: 600
     },
     height: {
       type: Number,
-      default: 600,
-    },
+      default: 600
+    }
   },
   setup(props) {
     const canvasElement = ref(null)
@@ -62,9 +62,9 @@ export default defineComponent({
       setStrokeColor,
       setDrawingMode,
       setStampImage,
-      saveImage,
+      saveImage
     }
-  },
+  }
 })
 </script>
 
